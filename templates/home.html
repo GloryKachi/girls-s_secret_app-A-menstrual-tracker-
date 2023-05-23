@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cycle App</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+  <body>
+  {% block content %}
+    <div class="welcomePage">
+      <h1>WELCOME</h1>
+      <div class="login">
+        <div class="image">
+            <img src="{{ MEDIA_URL }} image-removebg-preview(5).png" alt="image">
+
+
+          <form class="form" method="POST">
+              {% csrf_token %}
+            <label for="period day">Period Day:</label>
+            <input
+{#              type="date"#}
+              id="period_day"
+              name="period day"
+              required
+            />{{ id.circle.date }}
+              <br/><br/>
+
+
+
+            <label for="menstrual cycle length">Menstrual Cycle Length:</label>
+            <input
+              type="text"
+              id="menstrual cycle length"
+              name="menstrual cycle length"
+              required
+            />
+
+              <br /><br />
+
+            <label for="button"></label>
+            <input
+              type="submit"
+              id="button"
+              name="button"
+              required
+            /><br /><br />
+          </form>
+        </div>
+      </div>
+    </div>
+  {% endblock %}
+  </body>
+</html>

@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: blueviolet;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: 10vh;
+}
+
+.welcomePage {
+  border-radius: 20px;
+  background-color: blueviolet;
+  height: 100vh;
+  width: 50%;
+}
+
+.image img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* margin-bottom: 20%; */
+  height: 100px;
+  width: 100px;
+  margin-left: 10vh;
+  margin-bottom: 0px;
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateX(100%);
+  }
+
+  100% {
+    transform: translateY(10%);
+  }
+}
+
+.form {
+  max-width: 500px;
+  border: 2px solid blueviolet;
+  padding: 2rem;
+}
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+
+label {
+  display: block;
+}
+
+#button {
+  border: 0;
+  background-color: blueviolet;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  margin: 1rem 0;
+  text-transform: uppercase;
+}
+
+.login {
+  background-color: white;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 17%;
+  margin-top: 5vh;
+}
+
+h1 {
+  margin-top: 50px;
+  text-align: center;
+  color: white;
+  font-size: 5vh;
+  font-style: normal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
